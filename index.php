@@ -93,11 +93,11 @@ $user_colours = array(
             width: fit-content;
             margin: auto; 
             padding: 16px;
-            font-size: 2em;
+            font-size: 1em;
         }
         .hb {
             color: #ff3eff;
-            animation: pulse 1s infinite;
+            animation: pulse 3s infinite;
         }
         @keyframes pulse {
             0% {
@@ -204,7 +204,7 @@ $user_colours = array(
         }
         .menu_user {
             box-sizing: border-box;
-            background-color: rgba(255, 255, 255, 0.05); 
+            background-color: rgba(255, 255, 255, 0.2); 
             backdrop-filter: blur(4px);
             padding: 25px 4em;
             user-select: none;
@@ -403,7 +403,6 @@ $user_colours = array(
     </style>
 </head>
 <body>
-    <h1>Robocord being silly.</h1>
     <div class="button_area_wrapper">
         <div class="button_area">
             <a class="servr button" href="https://discord.com/invite/robopup">
