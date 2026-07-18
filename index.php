@@ -558,6 +558,14 @@ filter_dropdown_option.forEach(option => {
             option.classList.add('selected');
             filter_dropdown_options.setAttribute('option', option.getAttribute('option'));
             filter_dropdown.innerHTML = option.innerHTML;
+            
+            // make count be high to low by default, and name alphabetical
+            if (filter_dropdown_options.getAttribute('option') == "count") {
+                filter_reverse.setAttribute('reversed', 'true');
+            } else {
+                filter_reverse.setAttribute('reversed', 'false');
+            }
+            
             sortList();
         }
     });
