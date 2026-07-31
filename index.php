@@ -3,16 +3,17 @@ $user_colours = array(
     "voidpointer"   => array("#ff0080"),
     "vandeer"       => array("#ed960b", "#e0e0e0"),
     "vanpointer"    => array("#ff0080", "#ed960b"),
-    "tardis"        => array("#072A6C"),
+    "tardis"        => array("#072a6c"),
     "yuukii"        => array("#ff8dee"),
-    "jstar"         => array("#FF00FF"),
-    "aurora"        => array("#FF8FAB"),
+    "jstar"         => array("#ff00ff"),
+    "aurora"        => array("#ff8fab"),
     "scaredy"       => array("#f4a4cc"),
     "hotdog"        => array("#cd2547", "#050505"),
     "acerx"         => array("#9d59b8"),
     "kotnik"        => array("#55165e", "#18848e"),
     "luki"          => array("#fccafd"),
     "atoms"         => array("#ff0000"),
+    "amaranth"      => array("#e83256"),
 );
 ?>
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ $user_colours = array(
     <meta property="og:title" content="Robocord being silly.">
     <meta property="og:description" content="People from the Robopup Party Discord server saying unhinged things">
     <meta property="og:url" content="https://robocord.puppy-girl.uk">
-    <meta property="og:image" content="https://robocord.puppy-girl.uk/voidpointer/2026-06-23_14-02.png">
+    <meta property="og:image" content="https://robocord.puppy-girl.uk/preview.png">
     <meta name="theme-color" content="#7289da">
     <style>
         ::-webkit-scrollbar {
@@ -81,7 +82,7 @@ $user_colours = array(
             max-width: calc(98vw - 16px - 8px);
             margin: auto;
             display: block;
-            border-radius: 5px;
+            border-radius: 15px;
             transition: 0.1s; 
             user-select: none;
         }
@@ -485,7 +486,7 @@ foreach ($dirs as $dir) {
         if (!$fileinfoinner->isDot()) {
             $filename = $fileinfoinner->getFilename();
             if (str_ends_with($filename,".png")) {
-                echo "<img src='https://robocord.puppy-girl.uk/".$dirname."/".$filename."'</img>\n<br>";
+                echo "<img src='./".$dirname."/".$filename."'</img>\n<br>";
             }
         }
     }
