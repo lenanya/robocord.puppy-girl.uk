@@ -14,6 +14,8 @@ $user_colours = array(
     "luki"          => array("#fccafd"),
     "atoms"         => array("#ff0000"),
     "amaranth"      => array("#e83256"),
+    "jamie"         => array("#440e54"),
+    "taktik"        => array("#d37ba2"),
 );
 ?>
 <!DOCTYPE html>
@@ -22,7 +24,7 @@ $user_colours = array(
     <title>Robocord being silly.</title>
     <link rel="icon" href="/favicon.png" />
     <meta property="og:title" content="Robocord being silly.">
-    <meta property="og:description" content="People from the Robopup Party Discord server saying unhinged things">
+    <meta property="og:description" content="People from the Robopup Party Discord server saying unhinged and/or funny things">
     <meta property="og:url" content="https://robocord.puppy-girl.uk">
     <meta property="og:image" content="https://robocord.puppy-girl.uk/preview.png">
     <meta name="theme-color" content="#7289da">
