@@ -16,6 +16,9 @@ $user_colours = array(
     "amaranth"      => array("#e83256"),
     "jamie"         => array("#440e54"),
     "taktik"        => array("#d37ba2"),
+    "myles"         => array("#1800f0", "#970afc"),
+    "smolpint"      => array("#ff00ff", "#000000"),
+    "lena"          => array("#ff91ff", "#101010")
 );
 ?>
 <!DOCTYPE html>
@@ -488,7 +491,9 @@ foreach ($dirs as $dir) {
         if (!$fileinfoinner->isDot()) {
             $filename = $fileinfoinner->getFilename();
             if (str_ends_with($filename,".png")) {
-                echo "<img src='./".$dirname."/".$filename."'</img>\n<br>";
+                $id = $dirname."/".$filename;
+                //echo "<img id='".$id."' onclick=replace_img('".$id."') src='./spoiler.png'><img>\n<br>";
+                echo "<img src='./".$id."'></img>\n<br>";
             }
         }
     }
@@ -516,6 +521,11 @@ echo "</div>";
 window.addEventListener("DOMContentLoaded", () => {
     sortList();
 });
+
+function replace_img(id) {
+    let img = document.getElementById(id);
+    img.src = id;
+}
 
 //open/close menu
 const menuOpener = document.querySelector('.menu_opener');
